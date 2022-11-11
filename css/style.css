@@ -1,0 +1,179 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title{
+    background-color: red;
+    color: white;
+    font-size: 2.5em;
+    padding: 40px 0;
+    text-align: center;
+    margin: 0;
+    box-shadow: 0px 2px 10px 6px black;
+}
+
+.duelist{
+    background-color: red;
+    color: white;
+    font-size: 2.1em;
+    padding: 40px 0;
+    text-align: center;
+    margin: 0;
+    width: 30%;
+    max-width: 50%;
+    margin: auto;
+    box-shadow: 0px 2px 10px 6px black;
+    margin-top: 80px;
+}
+
+.controller{
+    background-color: red;
+    color: white;
+    font-size: 2.1em;
+    padding: 40px 0;
+    text-align: center;
+    margin: 0;
+    width: 30%;
+    max-width: 50%;
+    margin: auto;
+    box-shadow: 0px 2px 10px 6px black;
+    margin-top: 80px;
+}
+
+.int{
+    background-color: red;
+    color: white;
+    font-size: 2.1em;
+    padding: 40px 0;
+    text-align: center;
+    margin: 0;
+    width: 30%;
+    max-width: 50%;
+    margin: auto;
+    box-shadow: 0px 2px 10px 6px black;
+    margin-top: 80px;
+}
+
+.sent{
+    background-color: red;
+    color: white;
+    font-size: 2.1em;
+    padding: 40px 0;
+    text-align: center;
+    margin: 0;
+    width: 30%;
+    max-width: 50%;
+    margin: auto;
+    box-shadow: 0px 2px 10px 6px black;
+    margin-top: 80px;
+}
+
+.valoContainer{
+    padding: 0 10%;
+}
+
+.agent-image{
+    box-shadow: 0px 2px 10px 6px grey;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.images{
+    flex-basis: 26%;
+    max-height: 350px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.images img{
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+    transition-property: all;
+    transition-duration: .5s;
+}
+
+.images:hover img{
+    transform: scale(1.5);
+}
+
+.agent-bio{
+    background-color: red;
+    color: azure;
+    padding: 10%;
+    text-align: center;
+    line-height: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0;
+    /* display: none; */
+    /* visibility: hidden; */
+    transition: .5s opacity;
+    /* transition-delay: .5s; */
+}
+
+.agent-bio h2{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.agent-bio p{
+    font-weight: bold;
+}
+
+.images:hover .agent-bio{
+    opacity: 0.9;
+    /* display: block; */
+    /* visibility: visible; */
+}
+
+.button{
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.button a{
+    text-decoration: none;
+    padding: 40px;
+    background-color: red;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 60px;
+}
+
+.button a:hover{
+    background-color: black;
+}
+
+@media (max-width:576px){
+    body{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .duelist, .controller, .int, .sent{
+        font-size: 1em;
+    }
+    .images{
+        height: 100%;
+    }
+}
